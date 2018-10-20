@@ -21,18 +21,6 @@ client.on("ready", () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'sikik') {
-    msg.reply('Küfür & Hakaret içeren kelimeler kullanmamalısın!');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'sikerim') {
-    msg.reply('Küfür & Hakaret içeren kelimeler kullanmamalısın!');
-  }
-});
-
-client.on('message', msg => {
   if (msg.content === 'Sea') {
     msg.reply('Aleyküm Selam Hoşgeldin Huzur Voice OF Fakersda !');
   msg.react('🇦')
