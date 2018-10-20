@@ -32,7 +32,7 @@ message.channel.sendEmbed(new Discord.RichEmbed()
 
 client.on("message", message => {
 if (message.content.toLowerCase() === prefix + "sosyalmedya") {
-    msg.reply('Resmi Twitch Adresimiz: https://www.twitch.tv/voiceoffakerss Resmi Youtube adresimiz: https://www.youtube.com/channel/UCJsS5GOTirshUpwtHZ0T0uA Instagrami unutmadik: https://www.instagram.com/voiceoffakerss/?hl=tr');
+    msg.reply('Resmi Twitch Adresimiz: https://www.twitch.tv/voiceoffakerss Resmi Youtube adresimiz: https://www.youtube.com/channel/UCJsS5GOTirshUpwtHZ0T0uA Resmi Instagram Hesabımız: https://www.instagram.com/voiceoffakerss/?hl=tr');
    }
 });
 
