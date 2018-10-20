@@ -16,8 +16,24 @@ const log = message => {
 };
 
 client.on("ready", () => {
-  client.user.setGame(client.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString() + " Kullanıcı | Voice OF Fakers | by Chips#7271",'https://twitch.tv/voiceoffakers') 
+  client.user.setGame("Şu anda yayındayız | Voice OF Fakers |",'https://twitch.tv/voiceoffakerss') 
   console.log("Bağlandım!")   
+});
+
+
+client.on("message", message => {
+if (message.content.toLowerCase() === prefix + "avatarım") {
+message.channel.sendEmbed(new Discord.RichEmbed()
+.setDescription(`Avatarınız:`)
+.setImage(`${message.author.avatarURL}`)
+.setColor("RANDOM"));
+   }
+});
+
+client.on("message", message => {
+if (message.content.toLowerCase() === prefix + "sosyalmedya") {
+    msg.reply('Resmi Twitch Adresimiz: https://www.twitch.tv/voiceoffakerss Resmi Youtube adresimiz: https://www.youtube.com/channel/UCJsS5GOTirshUpwtHZ0T0uA Instagrami unutmadik: https://www.instagram.com/voiceoffakerss/?hl=tr');
+   }
 });
 
 client.on('message', msg => {
@@ -158,4 +174,4 @@ var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
 //   console.log(chalk.bgBlue.green(e.replace(regToken, 'that was redacted')));
 // });
 
-client.login(process.env.BOTUN_TOKEN);
+client.login(ayarlar.token);
