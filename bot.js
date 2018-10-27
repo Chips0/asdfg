@@ -21,9 +21,21 @@ client.on("ready", () => {
 });
 
 client.on("message", message => {
-if (message.content.toLowerCase() === prefix + "sosyalmedya") {
-    msg.reply('Resmi Twitch Adresimiz: https://www.twitch.tv/voiceoffakerss Resmi Youtube adresimiz: https://www.youtube.com/channel/UCJsS5GOTirshUpwtHZ0T0uA Resmi Instagram Hesabımız: https://www.instagram.com/voiceoffakerss/?hl=tr');
-   }
+    if (message.content.toLowerCase() === prefix + "sosyalmedya") {
+        const embed = new Discord.RichEmbed()
+
+            .addField("Sosyal Medya Adreslerimiz",'.')
+
+            .addField("Twitch", 'https://www.twitch.tv/voiceoffakerss')
+
+            .addField("Youtube", 'https://www.youtube.com/channel/UCJsS5GOTirshUpwtHZ0T0uA')
+
+            .addField("Instagram", 'https://www.instagram.com/voiceoffakerss/?hl=tr')
+            
+            .setColor("RANDOM")
+        
+        return message.channel.sendEmbed(embed)
+    }
 });
 
 client.on('message', msg => {
