@@ -39,7 +39,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-    if (message.content.toLowerCase() === prefix + "29ekim") {
+    if (message.content.toLowerCase() === prefix + "29ekimasdfasdfasdfgfsd") {
 	    message.delete();
         const embed = new Discord.RichEmbed()
 
