@@ -15,7 +15,7 @@ exports.conf = {
 };
 
 exports.help = {
- name: 'avatarım',
+ name: 'avatguufhib',
  description: 'Avatarınızı Atar ',
  usage: 'avatarım'
 };
