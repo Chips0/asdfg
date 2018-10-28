@@ -39,6 +39,15 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
+    if (message.content.toLowerCase() === prefix + "ping") {
+        const embed = new Discord.RichEmbed()
+            .setColor("RANDOM")
+            .setDescription("Botun Pingi :ping_pong: **" + bot.ping + "** ms")
+          return message.channel.sendEmbed(embed)
+    }   
+});
+
+client.on("message", message => {
     if (message.content.toLowerCase() === prefix + "29ekimasdfasdfasdfgfsd") {
 	    message.delete();
         const embed = new Discord.RichEmbed()
