@@ -56,7 +56,7 @@ client.on("message", message => {
 
             .addField(".", 'Cumhuriyet, toplumu ümmetten ulus, bireyi kuldan yurttaş konumuna yükselten bir Aydınlanma Devrimi dir. 29 Ekim, bir doğuşun, bir devrimin, kısacası bir mucizenin yıldönümüdür. Cumhuriyet Bayramınız Kutlu Olsun…')
 	
-	    .setImage(url="http://i2.haber7.net//haber/haber7/photos/2016/43/resimli_29_ekim_cumhuriyet_bayrami_sozleri_turk_bayrami_1477643943_1035.jpg")
+	    .setImage(url="http://medyapandora.com/wp-content/uploads/2018/10/29_ekim_2016_mailing.jpg")
             
             .setColor('0xff0000')
         
