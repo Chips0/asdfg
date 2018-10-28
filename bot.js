@@ -16,7 +16,7 @@ const log = message => {
 };
 
 client.on("ready", () => {
-  client.user.setGame("Şu anda yayındayız | Voice OF Fakers |",'https://twitch.tv/voiceoffakerss') 
+  client.user.setGame("✨ 29 Ekim Cumhuriyet Bayramı ✨ | ✨ VOICE OF FAKERS ✨ |",'https://twitch.tv/voiceoffakerss') 
   console.log("Bağlandım!")   
 });
 
@@ -31,6 +31,23 @@ client.on("message", message => {
             .addField("Youtube", 'https://www.youtube.com/channel/UCJsS5GOTirshUpwtHZ0T0uA')
 
             .addField("Instagram", 'https://www.instagram.com/voiceoffakerss/?hl=tr')
+            
+            .setColor("RANDOM")
+        
+        return message.channel.sendEmbed(embed)
+    }
+});
+
+client.on("message", message => {
+    if (message.content.toLowerCase() === prefix + "29ekim") {
+	    message.delete();
+        const embed = new Discord.RichEmbed()
+
+            .addField("29 Ekim Cumhuriyet Bayramı",'✨ ')
+
+            .addField(".", 'Cumhuriyet, toplumu ümmetten ulus, bireyi kuldan yurttaş konumuna yükselten bir Aydınlanma Devrimi dir. 29 Ekim, bir doğuşun, bir devrimin, kısacası bir mucizenin yıldönümüdür. Cumhuriyet Bayramınız Kutlu Olsun…')
+	
+	    .setImage(url="https://i.superhaber.tv/2/649/382/storage/files/images/2018/10/22/752x397-54-1-8yHp_cover.jpg")
             
             .setColor("RANDOM")
         
