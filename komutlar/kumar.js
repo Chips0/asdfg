@@ -31,7 +31,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'slots', 
-  description: 'Slots oyunu oynatır',
-  usage: 'slots'
+  name: 'kumar', 
+  description: 'Kumar oyunu oynatır',
+  usage: 'kumar'
 };
