@@ -109,7 +109,7 @@ const commands = {
 		
 		var url = `https://www.youtube.com/watch?v=${video.id}`
 		
-		if (url == '' || url === undefined) return msg.channel.sendMessage(`Bir YouTube linki eklemek için ${ayarlar.prefix}add <url> yazınız`);
+		if (url == '' || url === undefined) return msg.channel.sendMessage(`Bir YouTube linki eklemek için !add <url> yazınız`);
 		yt.getInfo(url, (err, info) => {
 			if(err) return msg.channel.sendMessage('Geçersiz YouTube Bağlantısı: ' + err);
 			if (!queue.hasOwnProperty(msg.guild.id)) queue[msg.guild.id] = {}, queue[msg.guild.id].playing = false, queue[msg.guild.id].songs = [];
