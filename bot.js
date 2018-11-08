@@ -16,7 +16,7 @@ const log = message => {
 };
 
 client.on("ready", () => {
-  client.user.setGame("✨ 29 Ekim Cumhuriyet Bayramı ✨ | ✨ VOICE OF FAKERS ✨ |",'https://twitch.tv/voiceoffakerss') 
+  client.user.setGame("| 1881 - 193∞ 10 Kasım | Voice OF Fakers |",'https://twitch.tv/voiceoffakerss') 
   console.log("Bağlandım!")   
 });
 
@@ -48,15 +48,15 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-    if (message.content.toLowerCase() === prefix + "29ekimasdfasdfasdfgfsd") {
+    if (message.content.toLowerCase() === prefix + "10kasımasdfasdfasdfgfsd") {
 	    message.delete();
         const embed = new Discord.RichEmbed()
 
-            .addField("29 Ekim Cumhuriyet Bayramı",'✨ ')
+            .addField("10 Kasım",'| 1881 - 1938 |')
 
-            .addField(".", 'Cumhuriyet, toplumu ümmetten ulus, bireyi kuldan yurttaş konumuna yükselten bir Aydınlanma Devrimi dir. 29 Ekim, bir doğuşun, bir devrimin, kısacası bir mucizenin yıldönümüdür. Cumhuriyet Bayramınız Kutlu Olsun…')
+            .addField(".", 'Gidiyor Ata’m, gidiyor еllеr üstündе, yürüyor kalbimizin еn dеrininе, ağlıyorkеn bizlеr yеdidеn yеtmişе, söz vеriyoruz Ata’m izindеn gitmеyе. Şimdi sеnsizliğе üzülmеnin zamanı, şimdi fikirlеrini daha iyi anlamalı, kurduğun cumhuriyеtin dеğеrini bilip, hеr zaman еn yüksеğе, ilеriyе taşımalı.')
 	
-	    .setImage(url="http://medyapandora.com/wp-content/uploads/2018/10/29_ekim_2016_mailing.jpg")
+	    .setImage(url="http://i.sabah.com.tr/sb/galeri/turkiye/10-kasim-ile-ilgili-en-guzel-siirler-kisa-ve-uzun/20.jpg")
             
             .setColor('0xff0000')
         
