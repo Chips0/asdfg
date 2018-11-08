@@ -8,5 +8,9 @@
   "purple": "#d604cf",
   "deniz": "397493070280654858",
   "malaka": "312226398901370882",
-  "burakbey": "235068553198436352"
+  "burakbey": "235068553198436352",
+  "token" : "token",
+	"api" : "youtube api",
+	"adminID" : "200690462015750146",
+	"passes" : 1
 }
