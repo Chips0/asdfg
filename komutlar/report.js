@@ -26,8 +26,8 @@ exports.run = function(client, message, args) {
     .addField("Zaman", message.createdAt)
     .addField("Sebep", rreason)
 
-    let reportschannel = message.guild.channels.find(`name`, "bot-komut");
-    if(!reportschannel) return message.channel.send(" `bot-komut` İsminde Yazı Kanalı Bulamıyorum.!");
+    let reportschannel = message.guild.channels.find(`name`, "sikayetler");
+    if(!reportschannel) return message.channel.send(" `sikayetler` İsminde Yazı Kanalı Bulamıyorum.!");
     reportschannel.send(reportEmbed);
 }
 
