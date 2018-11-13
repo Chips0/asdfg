@@ -24,8 +24,8 @@ exports.run = function(client, message, args) {
     .addField("Yetkili", `${message.author} ID: ${message.author.id}`)
     .addField("Sebep", rreason)
 
-    let reportschannel = message.guild.channels.find(`name`, "⚒mod-log");
-    if(!reportschannel) return message.channel.send(" `⚒mod-log` İsminde Yazı Kanalı Bulamıyorum.!");
+    let reportschannel = message.guild.channels.find(`name`, "bot-komut");
+    if(!reportschannel) return message.channel.send(" `` İsminde Yazı Kanalı Bulamıyorum.!");
     reportschannel.send(reportEmbed);
 }
 
@@ -37,7 +37,7 @@ exports.conf = {
 };
 
 exports.help = {
- name: 'uyar',
+ name: 'warn',
  description: 'İstediğiniz Kişiyi Uyarın.',
- usage: 'uyar'
+ usage: 'warn'
 };
