@@ -18,16 +18,16 @@ exports.run = function(client, message, args) {
     if(!rreason) return errors.noReason(message.channel);
 
     let reportEmbed = new Discord.RichEmbed()
-    .setDescription("Yeni Report")
-    .setColor(0x3899e7)
+    .setDescription("Şikayet Bildirimi")
+    .setColor("RANDOM")
     .addField("Reportlanan Kullanıcı", `${rUser} ID: ${rUser.id}`)
     .addField("Reportlayan Kullanıcı", `${message.author} ID: ${message.author.id}`)
     .addField("Kanal", message.channel)
     .addField("Zaman", message.createdAt)
     .addField("Sebep", rreason)
 
-    let reportschannel = message.guild.channels.find(`name`, "🔕sikayetler");
-    if(!reportschannel) return message.channel.send(" `sikayetler` İsminde Yazı Kanalı Bulamıyorum.!");
+    let reportschannel = message.guild.channels.find(`name`, "bot-komut");
+    if(!reportschannel) return message.channel.send(" `bot-komut` İsminde Yazı Kanalı Bulamıyorum.!");
     reportschannel.send(reportEmbed);
 }
 
