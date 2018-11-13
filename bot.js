@@ -1,15 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const bot = new Discord.Client();
+const ayarlar = require('./ayarlar.json');
 const chalk = require('chalk');
 const fs = require('fs');
 const ytdl = require('ytdl-core');
 const moment = require('moment');
-const { Client } = require('discord.js');
-const YouTube = require('simple-youtube-api');
-const yt = require('ytdl-core');
-const ayarlar = require('./ayarlar.json');
-const youtube = new YouTube(ayarlar.api);
 const talkedRecently = new Set();
 require('./util/eventLoader')(client);
 
@@ -20,7 +16,7 @@ const log = message => {
 };
 
 client.on("ready", () => {
-  client.user.setGame("| 1881 - 193∞ 10 Kasım | Voice OF Fakers |",'https://twitch.tv/voiceoffakerss') 
+  client.user.setGame("| Voice OF Fakers | by Chips#7271",'https://twitch.tv/voiceoffakerss') 
   console.log("Bağlandım!")   
 });
 
@@ -40,15 +36,6 @@ client.on("message", message => {
         
         return message.channel.sendEmbed(embed)
     }
-});
-
-client.on("message", message => {
-    if (message.content.toLowerCase() === prefix + "ping") {
-        const embed = new Discord.RichEmbed()
-            .setColor("RANDOM")
-            .setDescription("Botun Pingi :ping_pong: **" + client.ping + "** ms")
-          return message.channel.sendEmbed(embed)
-    }   
 });
 
 client.on("message", message => {
