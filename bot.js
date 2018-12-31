@@ -15,11 +15,6 @@ const log = message => {
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] ${message}`);
 };
 
-client.on("ready", () => {
-  client.user.setGame("| Voice OF Fakers | by Chips#7271",'https://twitch.tv/voiceoffakerss') 
-  console.log("Bağlandım!")   
-});
-
 client.on("message", message => {
     if (message.content.toLowerCase() === prefix + "sosyalmedya") {
         const embed = new Discord.RichEmbed()
