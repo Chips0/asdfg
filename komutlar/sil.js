@@ -15,7 +15,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'temizle',
+  name: 'sil',
   description: 'Belirlenen miktarda mesajı siler.',
-  usage: 'temizle <silinicek mesaj sayısı>'
+  usage: 'sil <silinicek mesaj sayısı>'
 };
