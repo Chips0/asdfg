@@ -25,7 +25,6 @@ exports.run = function(client, message, args) {
     .addField("Sebep", rreason)
 
     let reportschannel = message.guild.channels.find(`name`, "vof-logs");
-    if(!reportschannel) return message.channel.send(" `` İsminde Yazı Kanalı Bulamıyorum.!");
     reportschannel.send(reportEmbed);
 }
 
@@ -37,7 +36,7 @@ exports.conf = {
 };
 
 exports.help = {
- name: 'warn',
+ name: 'uyar',
  description: 'İstediğiniz Kişiyi Uyarın.',
  usage: 'warn'
 };
