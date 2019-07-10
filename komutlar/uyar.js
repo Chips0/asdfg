@@ -24,7 +24,7 @@ exports.run = function(client, message, args) {
     .addField("Yetkili", `${message.author} ID: ${message.author.id}`)
     .addField("Sebep", rreason)
 
-    let reportschannel = message.guild.channels.find(`name`, "uyarılar");
+    let reportschannel = message.guild.channels.find(`name`, "vof-logs");
     if(!reportschannel) return message.channel.send(" `` İsminde Yazı Kanalı Bulamıyorum.!");
     reportschannel.send(reportEmbed);
 }
